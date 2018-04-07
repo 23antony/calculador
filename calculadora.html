@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora</title>
+	<style>
+		label{
+			width:300px;
+			display:block;
+		}
+		form{
+			position:relative;
+		}
+		form input[type='text']{
+			text-align:right;
+		}
+		.operaciones{
+			position:absolute;
+			left:230px;
+			top:0px;
+			width:120px;
+		}
+		.operaciones input[type='button']{
+			width:40px;
+			display:block;
+			float:left;
+		}
+	</style>
+</head>
+<body>
+<header id="page_header">
+  <h1>Calculadora</h1>
+</header>
+	<section>
+		<article class="form">
+			<form>
+				<div class="controls">
+				<label>Operando 1
+				<input type="text" value="" id="operando1" size="5"/>
+				</label>
+				<label>Operando 2
+				<input type="text" value="" id="operando1" size="5"/>
+				</label>
+				</div>
+				<div class="operaciones">
+					<input type="button" value="+" onclick=""="suma"/>
+					<input type="button" value="-" onclick=""="resta"/>
+					<input type="button" value="/" onclick=""="divide"/>
+					<input type="button" value="x" onclick=""="multiplica" />
+					<input type="button" value="=" onclick=""="igual" />
+						<input type="button" value="C" id="limpia" />
+				</div>
+			</form>
+			<footer>
+        <input type="button" value= "Resultado" />
+				<div onclick=""=="resultado">
+					<h3>Resultado</h3>
+					<p>Aqui va el resultado...</p>
+				</div>
+			</footer>
+		</article>
+	</section>
+<footer id="page_footer">
+	<p>Derechos de autor 2018</p>
+</footer>
+</body>
+</html>
